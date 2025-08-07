@@ -1,8 +1,8 @@
 # User defined inputs ------------------------
 # Users need to modify the three variables below to their own credentials
-wrds_username <- "YOURWRDSUSENAME"
-wrds_password <- "YOURWRDSPASSWORD"
-fread_apikey <- "YOURFREDAPIKEY"
+wrds_username <- "jingookwon"
+wrds_password <- "t47k!xXhvsaje!R"
+fred_apikey <- "ccc8d4225575d294c70da7e99d782b17"
 
 # Libraries ---------------------------------
 library(lubridate)
