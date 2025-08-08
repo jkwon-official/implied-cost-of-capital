@@ -12,6 +12,6 @@ library(RPostgres)
 
 # Run code chunks ----------------------------
 source("icc_functions.R")
-source("wrds_download.R")
+# source("wrds_download.R")
 source("icc_comp.R")
 source("icc_us.R")

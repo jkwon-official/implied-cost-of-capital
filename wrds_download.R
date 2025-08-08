@@ -161,8 +161,8 @@ if (T) {
 
 
 # EXCHANGE RATES (COMPUTED IN WRDS CLOUD) ----------------------------------
-if (FALSE) {
-  "
+if (T) {
+  sql_string <- "
   /* USD to Foreign FX Conversion Rate from Compustat*/
     %macro compustat_fx(out=);
   data usd_curcdd; 
@@ -215,5 +215,6 @@ if (FALSE) {
   run;
   
   "
-  
+  wrds |> wrds_fetch(sql_string) |> fwrite("WRDS-DATA/exchange_rates.csv")
+
 }
