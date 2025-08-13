@@ -11,6 +11,7 @@ library(data.table)
 library(RPostgres)
 
 # Run code chunks ----------------------------
+setwd("/Users/jingookwon/Library/CloudStorage/OneDrive-Personal/Documents/GitHub/ICC/implied-cost-of-capital")
 source("icc_functions.R")
 # source("wrds_download.R")
 source("icc_comp.R")

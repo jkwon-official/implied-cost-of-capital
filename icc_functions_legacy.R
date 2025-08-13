@@ -270,12 +270,12 @@ icc_gls_fun <- function(data, root_low, root_high) {
     mutate(
       int_low = gls_func(r = root_low, p=prc_adj, 
                          bps0=bps0, bps1=bps1, bps2=bps2, bps3=bps3, bps4=bps4, bps5=bps5,
-                         bps6=bps6, bps7=bps7, bps8=bps8, bps9=bps9, bps10=bps10, bps11=bps11,
+                         bps6=bps6, bps7=bps7, bps8=bps8, bps9=bps9, bps10=bps11, bps11=bps11,
                          roe1=roe1, roe2=roe2, roe3=roe3, roe4=roe4, roe5=roe5, roe6=roe6, 
                          roe7=roe7, roe8=roe8, roe9=roe9, roe10=roe10, roe11=roe11, roe12=roe12),
       int_high = gls_func(r = root_high, p=prc_adj, 
                           bps0=bps0, bps1=bps1, bps2=bps2, bps3=bps3, bps4=bps4, bps5=bps5,
-                          bps6=bps6, bps7=bps7, bps8=bps8, bps9=bps9, bps10=bps10, bps11=bps11,
+                          bps6=bps6, bps7=bps7, bps8=bps8, bps9=bps9, bps10=bps11, bps11=bps11,
                           roe1=roe1, roe2=roe2, roe3=roe3, roe4=roe4, roe5=roe5, roe6=roe6, 
                           roe7=roe7, roe8=roe8, roe9=roe9, roe10=roe10, roe11=roe11, roe12=roe12)
     )
@@ -286,7 +286,7 @@ icc_gls_fun <- function(data, root_low, root_high) {
     mutate(
       icc_gls = uniroot(gls_func, interval = c(root_low, root_high), p=prc_adj, 
                         bps0=bps0, bps1=bps1, bps2=bps2, bps3=bps3, bps4=bps4, bps5=bps5,
-                        bps6=bps6, bps7=bps7, bps8=bps8, bps9=bps9, bps10=bps10, bps11=bps11,
+                        bps6=bps6, bps7=bps7, bps8=bps8, bps9=bps9, bps10=bps11, bps11=bps11,
                         roe1=roe1, roe2=roe2, roe3=roe3, roe4=roe4, roe5=roe5, roe6=roe6, 
                         roe7=roe7, roe8=roe8, roe9=roe9, roe10=roe10, roe11=roe11, roe12=roe12)$root
     )
